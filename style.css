@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    background-color:grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin: 0 50px;
+    width: fit-content;
+    height: auto;
+}
+.container .dot{
+    height: 12px;
+    width: 12px;
+    background-color:white;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 50px;
+    animation: dotloaders 1.5s linear infinite forwards;
+}
+.container .dot-one{
+    animation-delay: 0.25s;
+}
+.container .dot-two{
+    animation-delay: 0.5s;
+}
+.container .dot-three{
+    animation-delay: 0.75s;
+}
+
+ @keyframes dotloaders{
+    0%{
+        background-color: rgba(225,225,225,0.137);
+        transform: scale(.8);
+    }
+    50%{
+        background-color: white;
+        transform: scale(1.5);
+    }
+    100%{
+        background-color: rgba(225,225,225,0.137);
+        transform: scale(.8);
+    }
+} 
